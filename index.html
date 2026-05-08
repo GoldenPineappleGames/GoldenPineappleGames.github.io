@@ -6,11 +6,11 @@
     <title>Golden Pineapple Games</title>
     <style>
         :root {
-            --primary: #FFD166; /* Warm, bright yellow */
-            --background: #FFFDF9; /* Cozy, watercolor paper off-white */
+            --primary: #FFD166;
+            --background: #FFFDF9;
             --text-main: #4A4A4A;
             --text-light: #7A7A7A;
-            --accent: #EF476F; /* Soft pinkish red */
+            --accent: #EF476F;
             --card-bg: #FFFFFF;
         }
         body {
@@ -36,7 +36,7 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             margin-bottom: 1.5rem;
             object-fit: cover;
-            background-color: white; /* In case the logo has transparency */
+            background-color: white;
         }
         header h1 {
             margin: 0;
@@ -52,7 +52,7 @@
         }
         main {
             max-width: 800px;
-            margin: -2rem auto 3rem; /* Negative margin pulls it up over the header line slightly */
+            margin: -2rem auto 3rem;
             padding: 0 1.5rem;
             position: relative;
         }
@@ -88,8 +88,12 @@
             letter-spacing: 0.5px;
         }
         .badge.active {
-            background: #06D6A0; /* Bright, soft green */
+            background: #06D6A0;
             color: white;
+        }
+        .badge.tbd {
+            background: #FFB703; /* A nice warning-tape orange/yellow for unreleased stuff */
+            color: #fff;
         }
         p {
             font-size: 1.05rem;
@@ -111,58 +115,3 @@
             color: white;
             padding: 0.75rem 1.5rem;
             border-radius: 8px;
-            font-weight: 600;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            transition: all 0.2s ease;
-        }
-        .play-link:hover {
-            background: #333;
-            color: white;
-            text-decoration: none;
-            transform: translateY(-1px);
-            box-shadow: 0 6px 14px rgba(0,0,0,0.15);
-        }
-        footer {
-            text-align: center;
-            padding: 3rem 1rem;
-            margin-top: 4rem;
-            color: var(--text-light);
-            font-size: 0.9rem;
-        }
-    </style>
-</head>
-<body>
-
-<header>
-    <img src="https://play-lh.googleusercontent.com/ubGcUjE5FQkxtDEIooJ5oHmm9g-7i496GR2I9KGXTgiYuXG1sA3MejfjYVTG7thUzw7tNh2NDSKb7XvQBnITCK0=w240-h480-rw" alt="Golden Pineapple Games Logo" class="logo">
-    <h1>Golden Pineapple Games</h1>
-    <p>Independent mobile game studio</p>
-</header>
-
-<main>
-    <div class="game-card">
-        <h2>Fruitly <span class="badge active">Available Now</span></h2>
-        <p>A fast-paced trivia and matching game. Master the combat blender mechanics, balance your strategies around the fruit rarity tiers (yes, kiwis are common!), and carefully manage your moves to avoid the overload penalty.</p>
-        <a href="https://play.google.com/store/apps/details?id=com.fruitly&hl=en" class="play-link" target="_blank" rel="noopener noreferrer">View on Google Play</a>
-    </div>
-
-    <div class="game-card">
-        <h2>Pun Fiction: Box Office Blunders <span class="badge">In Development</span></h2>
-        <p>A delightfully frustrating puzzle game testing your knowledge of rhyming movie puns. Every puzzle goes through rigorous human-in-the-loop QA to ensure maximum groan-worthiness before making it into the game.</p>
-    </div>
-
-    <div class="game-card">
-        <h2>Birdly <span class="badge">In Development</span></h2>
-        <p>The ultimate avian trivia challenge. Test your knowledge across an extensive classification system, spanning from common backyard flyers all the way to "The Ghosts" of prehistoric skies.</p>
-    </div>
-</main>
-
-<footer>
-    <p>&copy; 2026 Golden Pineapple Games. All rights reserved.</p>
-    <p>
-        <a href="https://github.com/GoldenPineappleGames/golden-pineapple-legal/blob/main/privacy_policy.md" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
-    </p>
-</footer>
-
-</body>
-</html>
